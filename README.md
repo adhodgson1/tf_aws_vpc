@@ -57,6 +57,7 @@ Outputs
  - `private_route_table_ids` - list of private route table ids
  - `default_security_group_id` - VPC default security group id string
  - `nat_eips` - list of Elastic IP ids (if any are provisioned)
+ - `nat_eip_public_addresses` - list of public IP addresses assigned to the elastic IPs (if any are provisioned)
 
 **NOTE**: previous versions of this module returned a single string as a route
 table ID, while this version returns a list.

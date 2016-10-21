@@ -25,3 +25,7 @@ output "default_security_group_id" {
 output "nat_eips" {
   value = ["${aws_eip.nateip.*.id}"]
 }
+
+output "nat_eip_public_addresses" {
+  value = ["${aws_eip.nateip.*.public_ip}"]
+}
